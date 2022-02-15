@@ -62,4 +62,36 @@ Welcome email preview
 
 ![User mail preview in plain text](/images/user-mail-preview-text.png)
 
+New item email sample to all users
+<br>
+---
+
+![Item mail in html](/images/item-mail-1-html.png)
+
+---
+
+![Item mail in plain text](/images/item-mail-1-text.png)
+
+---
+
+![Item mail in html](/images/item-mail-2-html.png)
+
+---
+
+![Item mail in plain text](/images/item-mail-2-text.png)
+
+<br>
+
+## Preview Emails
+
+New item email preview
+<br>
+---
+
+![Item mail preview in html](/images/item-mail-preview-html.png)
+
+---
+
+![Item mail preview in plain text](/images/item-mail-preview-text.png)
+
 
