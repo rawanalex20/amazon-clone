@@ -26,12 +26,11 @@ class ItemsController < ApplicationController
     respond_to do |format|
       if @item.save
         users = User.all
-        users.each {
-          |user|
+        users.each do |user|
           p user
           SendItemMailsJob.perform_now(@item, user)
           # ItemMailer.with(item: @item, user: user).new_item_email.deliver_now
-        }
+        end
 
         format.html { redirect_to item_url(@item), notice: "Item was successfully created." }
         format.json { render :show, status: :created, location: @item }
