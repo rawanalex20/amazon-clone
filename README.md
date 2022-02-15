@@ -2,12 +2,7 @@
 
 ## Description
 
-A simple clone of amazon app to implement rails routes and mailer
-
-## Features
-
-- CRUD operations
-- Sending mails
+A simple clone of amazon app to implement rails routes and use active mailer, jobs and storage
 
 ## Versions
 
