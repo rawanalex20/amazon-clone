@@ -24,5 +24,38 @@ Run the following command in the root directory to install all required gems<br>
 
 ## Testing
 
-Run the following command to initialize the local server in development environment<br>
+Run the following command to initialize the local server<br>
 `rails s`
+
+### Mailhog Setting
+
+To test mails install mailhog and check the right address and port used are added in developement environment settings
+
+Follow [Installation guide](https://github.com/mailhog/MailHog)
+
+## Email Samples
+<br>
+
+## Inbox
+
+---
+
+![User mail in html](/images/user-mail-html.png)
+
+---
+
+![User mail in plain text](/images/user-mail-text.png)
+
+<br>
+
+## Preview Emails
+
+---
+
+![User mail preview in html](/images/user-mail-preview-html.png)
+
+---
+
+![User mail preview in plain text](/images/user-mail-preview-text.png)
+
+
