@@ -25,6 +25,13 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.save
+        users = User.all
+        users.each {
+          |user|
+          p user
+          ItemMailer.with(item: @item, user: user).new_item_email.deliver_now
+        }
+
         format.html { redirect_to item_url(@item), notice: "Item was successfully created." }
         format.json { render :show, status: :created, location: @item }
       else
@@ -65,6 +72,6 @@ class ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.require(:item).permit(:name, :description)
+      params.require(:item).permit(:name, :description, :price)
     end
 end
