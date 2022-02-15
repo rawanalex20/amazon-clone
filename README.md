@@ -73,14 +73,15 @@ Daily summary email
 <br>
 ---
 
-![Summary mail in html](/images/.png)
+![Summary mail in html](/images/summary-html.png)
 
 ---
 
-![Summary mail in plain text](/images/.png)
+![Summary mail in plain text](/images/summary-text.png)
 <br>
 
 ## Preview Emails
+Preview all preview emails at `http://localhost:3000/rails/mailers/<mailer-name>_mailer`
 
 Welcome email preview
 <br>
