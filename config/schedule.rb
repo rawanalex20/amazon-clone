@@ -16,8 +16,8 @@
 # every 4.days do
 #   runner "AnotherModel.prune_old_records"
 # end
-# every 1.day, at: '4:30 am' do
-#   runner "MyModel.task_to_run_at_four_thirty_in_the_morning"
-# end
+every 1.day, at: '11: 59 PM' do
+  runner #"MyModel.task_to_run_at_four_thirty_in_the_morning"
+end
 
 # Learn more: http://github.com/javan/whenever
