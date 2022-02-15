@@ -38,6 +38,8 @@ Follow [Installation guide](https://github.com/mailhog/MailHog)
 
 ## Inbox
 
+Welcome email sample to new user
+<br>
 ---
 
 ![User mail in html](/images/user-mail-html.png)
@@ -50,6 +52,8 @@ Follow [Installation guide](https://github.com/mailhog/MailHog)
 
 ## Preview Emails
 
+Welcome email preview
+<br>
 ---
 
 ![User mail preview in html](/images/user-mail-preview-html.png)
