@@ -50,18 +50,6 @@ Welcome email sample to new user
 
 <br>
 
-## Preview Emails
-
-Welcome email preview
-<br>
----
-
-![User mail preview in html](/images/user-mail-preview-html.png)
-
----
-
-![User mail preview in plain text](/images/user-mail-preview-text.png)
-
 New item email sample to all users
 <br>
 ---
@@ -79,10 +67,31 @@ New item email sample to all users
 ---
 
 ![Item mail in plain text](/images/item-mail-2-text.png)
+ 
+<br>
+Daily summary email
+<br>
+---
 
+![Summary mail in html](/images/.png)
+
+---
+
+![Summary mail in plain text](/images/.png)
 <br>
 
 ## Preview Emails
+
+Welcome email preview
+<br>
+---
+
+![User mail preview in html](/images/user-mail-preview-html.png)
+
+---
+
+![User mail preview in plain text](/images/user-mail-preview-text.png)
+<br>
 
 New item email preview
 <br>
@@ -93,5 +102,16 @@ New item email preview
 ---
 
 ![Item mail preview in plain text](/images/item-mail-preview-text.png)
+<br>
+
+Daily summary email preview
+<br>
+---
+
+![Summary mail preview in html](/images/summary-preview-html.png)
+
+---
+
+![Summary mail preview in plain text](/images/summary-preview-text.png)
 
 
