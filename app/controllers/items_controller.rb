@@ -29,7 +29,8 @@ class ItemsController < ApplicationController
         users.each {
           |user|
           p user
-          ItemMailer.with(item: @item, user: user).new_item_email.deliver_now
+          SendItemMailsJob.perform_now(@item, user)
+          # ItemMailer.with(item: @item, user: user).new_item_email.deliver_now
         }
 
         format.html { redirect_to item_url(@item), notice: "Item was successfully created." }
