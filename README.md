@@ -24,5 +24,5 @@ Run the following command in the root directory to install all required gems<br>
 
 ## Testing
 
-Run the following command to initialize the local server in development environment<br>
+Run the following command to initialize the local server<br>
 `rails s`
