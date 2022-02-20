@@ -1,7 +1,10 @@
 <div id="<%= dom_id item %>">
   <p>
     <strong>Cover:</strong>
-    <%= image_tag(item.cover, size: "200x200") %>
+    <%if item.cover.attached?%>
+      <%= image_tag(item.cover, size: "200x200") %>
+      <%= button_to "Delete cover", delete_cover_path(item), method: :delete %>
+    <%end%>
   </p>
 
   <p>
@@ -23,7 +26,7 @@
   <strong>Uploads:</strong>
   <% item.uploads.each do |u| %>
     <%= image_tag(u, size: "200x200") %>
-    
+    <!--<#% button_to "Delete image", delete_image_path(@item), method: :delete%>-->
   <% end %>
 </p>
 
