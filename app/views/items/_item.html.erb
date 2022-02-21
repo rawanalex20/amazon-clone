@@ -3,7 +3,7 @@
     <strong>Cover:</strong>
     <%if item.cover.attached?%>
       <%= image_tag(item.cover, size: "200x200") %>
-      <%= button_to "Delete cover", delete_cover_path(item), method: :delete %>
+      <%= button_to "Delete cover", delete_cover_item_path(item), method: :delete %>
     <%end%>
   </p>
 
@@ -26,7 +26,7 @@
   <strong>Uploads:</strong><br>
   <% item.uploads.each do |u| %>
     <%= image_tag(u, size: "200x200") %>
-    <%= button_to "Delete image", delete_upload_path(u), method: :delete %>
+    <%= button_to "Delete image", delete_upload_item_path(u), method: :delete %>
   <% end %>
 </p>
 
