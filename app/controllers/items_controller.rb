@@ -28,7 +28,7 @@ class ItemsController < ApplicationController
         users = User.all
         users.each do |user|
           p user
-          # SendItemMailsJob.perform_now(@item, user)
+          SendItemMailsJob.perform_now(@item, user)
         end
 
         format.html { redirect_to item_url(@item), notice: "Item was successfully created." }
