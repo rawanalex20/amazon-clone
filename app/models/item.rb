@@ -5,5 +5,8 @@ class Item < ApplicationRecord
     validates :name, :price, presence: true
     validates :price, numericality: true
     validates :cover, presence: true
+
+    attr_accessor :image
+
     
 end
