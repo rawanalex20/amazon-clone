@@ -1,0 +1,33 @@
+<div id="<%= dom_id item %>">
+  <p>
+    <strong>Cover:</strong>
+    <%if item.cover.attached?%>
+      <%= image_tag(item.cover, size: "200x200") %>
+      <%= button_to "Delete cover", delete_cover_item_path(item), method: :delete %>
+    <%end%>
+  </p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= item.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= item.description %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= item.price %>
+  </p>
+
+  <p>
+  <strong>Uploads:</strong><br>
+  <% item.uploads.each do |u| %>
+    <%= image_tag(u, size: "200x200") %>
+    <%= button_to "Delete image", delete_upload_item_path(u), method: :delete %>
+  <% end %>
+</p>
+
+</div>

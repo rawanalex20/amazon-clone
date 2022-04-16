@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :users
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :items do
+    member do
+      delete 'delete_attachment', to: 'items#delete_attachment', as: 'delete_cover'
+      delete 'upload', to: 'items#delete_upload', as: 'delete_upload'
+    end
+  end
+  
 end
